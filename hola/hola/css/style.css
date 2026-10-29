@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 300px;
+    background-image:url(../img/nailon.png);
+    background-size: cover;
+    background-position:center ;
+
+}
+#contenedor_header{
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(12,12,12,0.4);
+    border-top: 10px rgb(12,12,12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenedor_header p{
+    font-family: Arial, Helvetica, sans-serif black;
+    font-size: 52px;
+    letter-spacing: 6px;
+    color: #E50914;
+    text-shadow: 3px 4px 4px black;
+    margin: 10px;
+
+}
+nav{
+width: 100%;
+height: 50px;
+background-color: rgb(12, 12, 12);
+border-bottom: 2px solid #222222;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav a{
+font-size: 20px;
+color: white;
+text-decoration: none;
+letter-spacing: 1px;
+padding: 0 30px;
+}
+nav a:hover{
+color: #E50914;
+}
+#seleccionado{
+color: #E50914;
+}
+#intermedio{
+border-left: 2px solid white;
+border-right: 2px solid white;
+}
+
+main{
+    width: 100%;
+
+
+    min-width: 100vh;
+    height: auto;
+    background-color: rgb(12, 12, 12);
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+main .lateral{
+    width: 15%;
+    height: auto;
+    background-image: url(../img/cintasssss.png);
+    background-size: contain;
+    
+
+}
+main #contenido{
+    width: 65%;
+    height: auto;
+
+
+    background-color: rgb(20,20,20);
+
+    padding: 70px;
+}
+main #contenido{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #222222;
+}
+main #titulo{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #222222;
+}
+main #contenido section{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 80px;
+    row-gap: 60px;
+
+    justify-content: center;
+}
+section article{
+    width: 250px;
+    height: 320px;
+
+    margin: 30px;
+
+    border: 1px  black;
+
+    box-shadow: 4px 4px 4px black;
+
+
+
+    background-position: center;
+    background-size: cover;
+    
+    transition: 0.3s
+}
+
+section article :hover{
+    transform:scale(1.05);
+
+}
+.titulo_peli{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 2px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: arial black;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.titulo_peli:hover{
+    opacity: 1;
+}
+
+#pelicula1{
+    background-image: url(../img/屏幕截图\ 2026-10-28\ 194735.png)
+
+}
+#pelicula2{
+    background-image: url(../img//屏幕截图\ 2026-10-28\ 194841.png)
+}
+#pelicula3{
+    background-image: url(../img/屏幕截图\ 2026-10-28\ 194901.png)
+}
+#pelicula4{
+    background-image: url(../img/屏幕截图\ 2026-10-28\ 194909.png)
+}
+#pelicula5{
+    background-image: url(../img/屏幕截图\ 2026-10-28\ 194917.png)
+}
+#pelicula6{
+    background-image: url(../img/屏幕截图\ 2026-10-28\ 194936.png);
+}
+#seccion_pelis_pendientes{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(12, 12, 12);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seccion_pelis_pendientes p{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#seccion_pelis_pendientes hr{
+    width: 80%;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+#contenedor_pelis_pendientes{
+    width: 65%;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid #222222;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: scroll;
+}
+#contenedor_pelis_pendientes article{
+    min-width: 200px;
+    height: 250px;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+#pelicula_pendiente1{
+    background-image: url(../img/nailon.png);
+}
+
+#pelicula_pendiente2{
+    background-image: url(img/animalesFantasticos.png);
+}
+#contenedor_pelis_pendientes::-webkit-scrollbar{
+    height: 5px;
+}
+
+#contenedor_pelis_pendientes::-webkit-scrollbar-thumb{
+    background: #E50914;
+    border-radius: 5px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(20, 20, 20);
+    border-top: 2px solid #222222;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    color: white;
+}
+main #contenido section article{
+    margin: 0;
+}
+
+main #contenido section article:hover{
+    transform: scale(1.05);
+}
+
+#pelicula_pendiente3{
+    background-image: url(../img/pendiente3.png);
+}
+
+#pelicula_pendiente4{
+    background-image: url(../img/pendiente4.png);
+}
+
+#pelicula_pendiente5{
+    background-image: url(../img/pendiente5.png);
+}
+
+.contenedor_peli{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/nailon.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido_peli{
+    width: 75%;
+    height: 70%;
+    background-color: rgb(20,20,20);
+    border: 2px solid #E50914;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+#imagen_peli{
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen_avengers{
+    background-image: url(../img/屏幕截图\ 2026-10-28\ 194735.png);
+}
+
+.imagen_oppenheimer{
+    background-image: url(../img/屏幕截图\ 2026-10-28\ 194901.png);
+}
+
+#descripcion_peli{
+    width: 60%;
+    padding: 40px;
+    color: white;
+}
+
+#descripcion_peli h2{
+    font-size: 32px;
+    color: #E50914;
+    margin-bottom: 30px;
+}
+
+#descripcion_peli h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#descripcion_peli p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.boton_volver{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: #E50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
